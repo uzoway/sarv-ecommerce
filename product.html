@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=STIX+Two+Text&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- Swiper CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="./main.css">
+    <title>Product page</title>
+</head>
+<body>
+
+    <main class="main__container">
+        <nav class="navigation product__navigation">
+            <a href="index.html" class="navigation__brandname product-navigation">Sarv</a>
+            <ul class="navigation__list">
+                <li class="navigation__list--item nav-link product-navigation"><a href="index.html">Shop</a></li>
+                <li class="navigation__list--item nav-link product-navigation"><a href="about.html">About</a></li>
+                <li class="navigation__list--item nav-link product-navigation"><a href="#">Credits</a></li>
+            </ul>
+
+            <button class="navigation__button">Menu</button>
+
+            <a href="#" class="navigation__cart product-navigation">My Cart [<span class="cart__number">0</span>]</a>
+        </nav>
+
+        <div class="mobile__navigation">
+            <nav>
+                <ul class="mobile__navigation--list">
+                    <li class="mobile__navigation--item"><a href="index.html" class="mobile__navigation--link">shop</a></li>
+                    <li class="mobile__navigation--item"><a href="./about.html" class="mobile__navigation--link">about</a></li>
+                    <li class="mobile__navigation--item"><a href="#" class="mobile__navigation--link">credits</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="product__container">
+            <div class="product__container--left">
+            </div>
+
+            <div class="product__container--right">
+                <div class="product__container--details">
+                    <div class="product__details--title">
+                        <p>killau hoodie</p>
+                        <p>$250</p>
+                    </div>
+
+                    <p class="product__details--paragraph">We are a group of Yoruba people of honor who believe in hardwork, respect the rights of others and give to the community
+                        in deeds and in action
+                    </p>
+                    <p class="product__details--size">Size</p>
+
+                    <div class="button__container">
+                        <button class="button__container--btn">sm</button>
+                        <button class="button__container--btn">md</button>
+                        <button class="button__container--btn">lg</button>
+                        <button class="button__container--btn">xl</button>
+                        <button class="button__container--btn">xxl</button>
+                    </div>
+
+                    <div class="cart__btn">
+                        <button class="add__cart">Add to cart</button>
+                    </div>
+
+                    <div class="product__accordion">
+                        <div class="accordion__heading">
+                            <p class="accordion__paragraph">Shipping & Returns</p>
+                            <span class="accordion__symbol"></span>
+                        </div>
+                        <div class="accordion__content"> 
+                            <p>We are a group of Yoruba people of honor who believe in hardwork, respect the rights of others and give to the community
+                                in deeds and in action
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right__container--pair">
+                    <h2 class="right__pair--heading">pairings</h2>
+
+                    <div class="swiper">
+                        <div class="right__container--img swiper-wrapper"> 
+                            <div class="swiper-slide">
+                                <img src="./images/Rectangle 8 (1).jpg" alt="green sweatshirt">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/Rectangle 9 (1).jpg" alt="black shorts">
+                            </div>
+                            <div class="swiper-slide">
+                                <img  src="./images/Rectangle 10 (1).jpg" alt="black cap">
+                            </div>
+                        </div>
+
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__item">
+                <p class="footer__contact--paraagraph">Contact</p>
+                <ul class="footer__list">
+                    <li class="footer__list--item footer__list--item1"><a href="#" class="footer__item--link footer__contact--list">hello@olacodes.com</a></li>
+                    <li class="footer__list--item footer__list--item1"><a href="#" class="footer__item--link footer__contact--list">Instagram</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__item">
+                <ul class="footer__list">
+                    <li class="footer__list--item"><a href="#" class="footer__item--link">Shipping & Return</a></li>
+                    <li class="footer__list--item"><a href="#" class="footer__item--link">Terms</a></li>
+                    <li class="footer__list--item"><a href="#" class="footer__item--link">Refund policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__item">
+                <p class="footer__item--copyright">&copy;2023 Sarv. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="./product.js"></script>
+    <script src="index.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+
+            // Optional parameters
+            direction: 'horizontal',
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: true
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=STIX+Two+Text&display=swap" rel="stylesheet">
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="./main.css">
+    <title>About Us</title>
+</head>
+<body>
+
+    <main class="main-container">
+        <nav class="navigation">
+            <a href="index.html" class="js-about-nav navigation__brandname">Sarv</a>
+            <ul class="navigation__list">
+                <li class="js-about-nav navigation__list--item nav-link"><a href="index.html">Shop</a></li>
+                <li class="js-about-nav navigation__list--item nav-link"><a href="about.html" class="active">About</a></li>
+                <li class="js-about-nav navigation__list--item nav-link"><a href="#">Credits</a></li>
+            </ul>
+
+            <button class="js-about-nav navigation__button">Menu</button>
+
+            <a href="#" class="js-about-nav navigation__cart">My Cart [<span>0</span>]</a>
+        </nav>
+
+        <div class="mobile__navigation">
+            <nav>
+                <ul class="mobile__navigation--list">
+                    <li class="mobile__navigation--item"><a href="index.html" class="mobile__navigation--link">shop</a></li>
+                    <li class="mobile__navigation--item"><a href="./about.html" class="mobile__navigation--link">about</a></li>
+                    <li class="mobile__navigation--item"><a href="#" class="mobile__navigation--link">credits</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1 class="about__heading">sarv</h1>
+
+        <div class="about__container">
+            <div class="about__container--image">
+                <div class="white-overlay"></div>
+                <img src="./images/Rectangle 16.jpg" alt="picture of a Sweatshirt" class="js-image about__image">
+            </div>
+
+            <div class="about__container--content">
+                <h2 class="js-about-content about__container--heading">About us</h2>
+                <p class="js-about-content about__container--paragraph">We are a team of fashion-forward individuals who are passionate about all things style. 
+                    From streetwear to high fashion, we are always on the lookout for the next big trend and are excited to share it with our 
+                    community.
+                </p>
+                <p class="js-about-content about__container--paragraph">At SARV, we believe that fashion is a form of self-expression and that everyone should 
+                    have the opportunity to showcase their unique style. That's why we offer a wide range of clothing and accessories for men 
+                    and women, all at affordable prices.
+                </p>
+                <p class="js-about-content about__container--paragraph">Our goal is to make it easy for you to find the perfect outfit, no matter what your 
+                    personal style may be. So whether you're a sneakerhead, a streetwear enthusiast, or a lover of high fashion, we've got 
+                    something for you.
+                </p>
+                <p class="js-about-content about__container--paragraph">Thank you for choosing SARV as your go-to source for all things fashion. We can't wait 
+                    to see how you rock our swag!
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
